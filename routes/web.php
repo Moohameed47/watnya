@@ -15,4 +15,3 @@ Route::get('/students', [StudentsController::class, 'index']);
 // Route::get('/students?specialization=CS', [StudentsController::class, 'index']);
 // Route::get('/students?level=One', [StudentsController::class, 'index']);
 // Route::get('/students?level=One&specialization=CS', [StudentsController::class, 'index']);
-

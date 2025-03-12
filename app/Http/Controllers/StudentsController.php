@@ -7,10 +7,7 @@ use Illuminate\Http\Request;
 
 class StudentsController
 {
-    // ROLES
-    // 1- role: student
-    // 2- role: doctor
-    // 3- role: admin
+    // Get All Students to be shown in the first page of Students with filteration
     public function index(Request $request)
     {
         $query = Student::query();
@@ -24,5 +21,4 @@ class StudentsController
         $students = $query->get(['name', 'email', 'phoneNumber', 'level', 'specialization']);
         return response()->json(['students' => $students], 200);
     }
-
 }
