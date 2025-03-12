@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('code');
             $table->string('password');
             $table->boolean('showGrades')->default(false);
             $table->string('academic_year')->nullable();

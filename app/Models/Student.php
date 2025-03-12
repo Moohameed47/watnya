@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Student extends Model
 {
+    protected $table = 'students';
     protected $fillable = ['name', 'phoneNumber', 'email', 'password', 'code', 'level', 'specialization', 'gpa', 'academic_year'];
 
     public function grades()

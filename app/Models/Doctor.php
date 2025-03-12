@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Doctor extends Model
 {
+    protected $table = 'doctors';
     protected $fillable = ['name', 'phoneNumber', 'email', 'password', 'code'];
 
     public function subjects()
