@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('admins', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('code');
-            $table->string('password');
+            // $table->string('name');
+            // $table->string('email')->unique();
+            // $table->string('code');
+            // $table->string('password');
             $table->boolean('showGrades')->default(false);
             $table->string('academic_year')->nullable();
             $table->enum('current_semester', ['One', 'Two'])->nullable();
